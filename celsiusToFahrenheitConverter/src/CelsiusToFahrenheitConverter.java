@@ -1,4 +1,3 @@
-import java.io.*;
 import java.util.Scanner;
 
 public class CelsiusToFahrenheitConverter {
@@ -10,11 +9,11 @@ public class CelsiusToFahrenheitConverter {
         //Input the Celsius
         System.out.println("Please enter in your temperature in Celsius.");
 
-        //Create Scanner Object
-        Scanner celsiusInput = new Scanner(System.in);
-
-        //Set celcius to celsiusInput
-        celsius = celsiusInput.nextInt();
+        try (//Create Scanner Object
+        Scanner celsiusInput = new Scanner(System.in)) {
+            //Set celcius to celsiusInput
+            celsius = celsiusInput.nextInt();
+        }
 
         //Set equation to convert Celcius to Fahrenheit note double needed for decimal place
         double fahrenheit = (double) (9.0/5)*celsius+32;
