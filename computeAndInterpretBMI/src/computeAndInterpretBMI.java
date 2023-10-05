@@ -35,6 +35,7 @@ public class computeAndInterpretBMI {
         
         System.out.println("Your BMI is: " + bmi);
 
+
         //This is a comparision to make the decision on Normal or Not. 
         if (bmi>=18.5&&bmi<=24.9)
             System.out.println("Your BMI is normal.");
