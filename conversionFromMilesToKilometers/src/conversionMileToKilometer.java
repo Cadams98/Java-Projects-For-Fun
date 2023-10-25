@@ -1,4 +1,4 @@
-public class App {
+public class conversionMileToKilometer {
     public static void main(String[] args) throws Exception {
         
         System.out.println("Miles           Kilometers");
