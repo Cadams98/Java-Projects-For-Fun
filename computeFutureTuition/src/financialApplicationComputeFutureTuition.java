@@ -13,7 +13,7 @@ public class financialApplicationComputeFutureTuition {
 
         //Compute the tution 4 years after the ten year. 
         double totalCost = 0;
-        for (int i = 1; i <= 4; i++);{
+        for (int i = 1; i <= 4; i++) {
             totalCost += tuition;
             tuition = tuition + (tuition * interest);
         }
